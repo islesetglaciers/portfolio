@@ -1,3 +1,108 @@
-#accueil {
+html {
     background: linear-gradient(113deg, rgba(164,191,235,1) 0%, rgba(247,177,171,1) 37%, rgba(255,222,89,1) 90%, rgba(164,191,235,1) 100%);
+    width: 100vw;
+    height: 100vh;
+    font-family: $montserrat;
+    color: white;
+
+    header {
+        display: flex;
+
+        .menu-nav {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-family: $chivo;
+            font-weight: 300;
+            text-transform: uppercase;
+            font-size: 1.5em;
+            border-bottom: 1px solid white;
+            padding: 8px 0;
+            margin: 20px;
+            cursor: pointer;
+            transition: 0.5s;
+
+            &:hover {
+                letter-spacing: 0.2em;
+            }
+        }
+
+        #menu {
+            display: none;
+            width: 100%;
+            background-color: $accent_rose;
+            list-style: none;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-end;
+            margin: 0;
+            // height: 100vh;
+            font-family: $chivo;
+            letter-spacing: 0.2em;
+            font-size: 1.5em;
+    
+            li {
+                padding: 0 150px 0 0;
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                    text-transform: uppercase;
+                }
+    
+                .actif {
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+    
+    .contenu {
+        .titre {
+            font-family: $erica_one;
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 9em;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+            
+            span {
+                width: 100%;
+            }
+
+            #prenom,
+            #nom {
+                position: relative;
+                left: -15px;
+            }
+
+            #prenom {
+                font-size: 1.8em;
+            }
+
+            #nom {
+                top: -90px;
+            }
+        }
+
+        .description {
+            text-align: right;
+            width: 50%;
+            margin-left: 45%;
+            font-size: 1.75em;
+        }
+
+        .liens-social {
+            font-size: 2em;
+            margin-left: 20px;
+            letter-spacing: 0.1em;
+            span {
+                a {
+                    color: inherit;
+                }
+            }
+        }
+    }
+    
+    
 }
