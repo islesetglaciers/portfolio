@@ -1,144 +1,311 @@
-html {
-    background: linear-gradient(113deg, rgba(164,191,235,1) 0%, rgba(247,177,171,1) 37%, rgba(255,222,89,1) 90%, rgba(164,191,235,1) 100%);
-    width: 100vw;
-    height: 100vh;
-    font-family: $montserrat;
-    color: white;
-
-    header {
-        display: flex;
-
-        .menu-nav {
-            position: absolute;
-            top: 0;
-            right: 0;
-            font-family: $chivo;
-            font-weight: 300;
-            text-transform: uppercase;
-            font-size: 1.5em;
-            border-bottom: 1px solid white;
-            padding: 8px 0;
-            margin: 20px;
-            cursor: pointer;
-            transition: 0.5s;
-
-            &:hover {
-                letter-spacing: 0.2em;
-            }
-        }
-
-        #menu {
-            display: none;
-            width: 100%;
-            background-color: $accent_rose;
-            list-style: none;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: flex-end;
-            margin: 0;
-            // height: 100vh;
-            font-family: $chivo;
-            letter-spacing: 0.2em;
-            font-size: 1.5em;
+@media only screen and (max-width: 600px) {
+    html {
+        background: linear-gradient(113deg, rgba(164,191,235,1) 0%, rgba(247,177,171,1) 37%, rgba(255,222,89,1) 90%, rgba(164,191,235,1) 100%);
+        width: 100vw;
+        height: 100vh;
+        font-family: $montserrat;
+        color: white;
     
-            li {
-                padding: 0 150px 0 0;
-                a {
-                    text-decoration: none;
-                    color: inherit;
-                    text-transform: uppercase;
-                }
+        header {
+            display: flex;
     
-                .actif {
-                    font-weight: 900;
-                }
-            }
-        }
-    }
-    
-    #accueil {
-        .contenu {
-            .titre {
-                font-family: $erica_one;
-                display: flex;
-                flex-wrap: wrap;
-                font-size: 9em;
-                font-weight: 400;
+            .menu-nav {
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-family: $chivo;
+                font-weight: 300;
                 text-transform: uppercase;
-                letter-spacing: 0.3em;
-                
-                span {
-                    width: 100%;
-                }
+                font-size: 1.5em;
+                border-bottom: 1px solid white;
+                padding: 8px 0;
+                margin: 20px;
+                cursor: pointer;
+                transition: 0.5s;
     
-                #prenom,
-                #nom {
-                    position: relative;
-                    left: -15px;
-                }
-    
-                #prenom {
-                    font-size: 1.8em;
-                }
-    
-                #nom {
-                    top: -90px;
+                &:hover {
+                    letter-spacing: 0.2em;
                 }
             }
     
-            .description {
-                text-align: right;
-                width: 50%;
-                margin-left: 45%;
-                font-size: 1.75em;
-            }
-    
-            .liens-social {
-                font-size: 2em;
-                margin-left: 20px;
-                letter-spacing: 0.1em;
-                span {
+            #menu {
+                display: none;
+                width: 100%;
+                background-color: $accent_rose;
+                list-style: none;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: flex-end;
+                margin: 0;
+                // height: 100vh;
+                font-family: $chivo;
+                letter-spacing: 0.2em;
+                font-size: 1.5em;
+        
+                li {
+                    padding: 0 150px 0 0;
                     a {
+                        text-decoration: none;
                         color: inherit;
+                        text-transform: uppercase;
+                    }
+        
+                    .actif {
+                        font-weight: 900;
+                    }
+                }
+            }
+        }
+    
+        #accueil {
+            .contenu {
+                width: 100%;
+    
+                .titre {
+                    font-family: $erica_one;
+                    display: flex;
+                    flex-wrap: wrap;
+                    font-size: 4.5em;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    letter-spacing: 0.3em;
+                    padding-top: 50px;
+                    
+                    span {
+                        width: 100%;
+                    }
+        
+                    #prenom,
+                    #nom {
+                        position: relative;
+                        left: -15px;
+                    }
+        
+                    #prenom {
+                        font-size: 1.8em;
+                    }
+        
+                    #nom {
+                        top: -45px;
+                    }
+                }
+        
+                .description {
+                    text-align: right;
+                    width: 60%;
+                    margin-left: 35%;
+                    font-size: 1.3em;
+                }
+        
+                .liens-social {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 20px;
+                    font-size: 2em;
+                    letter-spacing: 0.1em;
+                    span {
+                        a {
+                            color: inherit;
+                        }
                     }
                 }
             }
         }
     }
-    
-    #a-propos {
-        .contenu {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            width: 85%;
-            margin: 0 auto;
+}
 
-            .photo {
-                h1 {
+// Tablettes et plus grand
+@media only screen and (min-width: 601px) {
+    html {
+        background: linear-gradient(113deg, rgba(164,191,235,1) 0%, rgba(247,177,171,1) 37%, rgba(255,222,89,1) 90%, rgba(164,191,235,1) 100%);
+        width: 100vw;
+        height: 100vh;
+        font-family: $montserrat;
+        color: white;
+    
+        header {
+            display: flex;
+    
+            .menu-nav {
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-family: $chivo;
+                font-weight: 300;
+                text-transform: uppercase;
+                font-size: 1.5em;
+                border-bottom: 1px solid white;
+                padding: 8px 0;
+                margin: 20px;
+                cursor: pointer;
+                transition: 0.5s;
+    
+                &:hover {
+                    letter-spacing: 0.2em;
+                }
+            }
+    
+            #menu {
+                display: none;
+                width: 100%;
+                background-color: $accent_rose;
+                list-style: none;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: flex-end;
+                margin: 0;
+                // height: 100vh;
+                font-family: $chivo;
+                letter-spacing: 0.2em;
+                font-size: 1.5em;
+        
+                li {
+                    padding: 0 150px 0 0;
+                    a {
+                        text-decoration: none;
+                        color: inherit;
+                        text-transform: uppercase;
+                    }
+        
+                    .actif {
+                        font-weight: 900;
+                    }
+                }
+            }
+        }
+        
+        #accueil {
+            .contenu {
+                width: 100%;
+    
+                .titre {
                     font-family: $erica_one;
-                    font-size: 3em;
+                    display: flex;
+                    flex-wrap: wrap;
+                    font-size: 9em;
                     font-weight: 400;
                     text-transform: uppercase;
                     letter-spacing: 0.3em;
-                    position: relative;
-                    top: 70%;
-                    left: 40%;
+                    margin-bottom: 0;
+                    
+                    span {
+                        width: 100%;
+                    }
+        
+                    #prenom,
+                    #nom {
+                        position: relative;
+                        left: -15px;
+                    }
+        
+                    #prenom {
+                        font-size: 1.8em;
+                    }
+        
+                    #nom {
+                        top: -90px;
+                    }
                 }
-
-                img {
-                    width: 100%;
+        
+                .description {
+                    text-align: right;
+                    width: 50%;
+                    margin-left: 45%;
+                    font-size: 1.75em;
                 }
-            }
-
-            .description {
-                width: 60%;
-                margin-top: 20%;
-                margin-left: 20%;
-                font-weight: 400;
-                line-height: 1.75em;
+        
+                .liens-social {
+                    position: absolute;
+                    bottom: 30px;
+                    left: 30px;
+                    font-size: 2em;
+                    letter-spacing: 0.1em;
+                    span {
+                        a {
+                            color: inherit;
+                        }
+                    }
+                }
             }
         }
-    }
-    
+        
+        #a-propos {
+            .contenu {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 85%;
+                margin: 0 auto;
+
+                .photo {
+                    h1 {
+                        font-family: $erica_one;
+                        font-size: 3em;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        letter-spacing: 0.3em;
+                        position: relative;
+                        top: 70%;
+                        left: 40%;
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .description {
+                    width: 60%;
+                    margin-top: 20%;
+                    margin-left: 20%;
+                    font-weight: 400;
+                    line-height: 1.75em;
+                }
+            }
+        }
+
+        #projets {
+            .contenu {
+                width: 85%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: row;
+
+                .description {
+                    font-family: $erica_one;
+                    font-size: 5em;
+                    padding-top: 35%;
+                    width: 100%;
+                    z-index: 10;
+
+                    .projet {
+                        a {
+                            margin: 0 20px;
+                            transition: 0.5s;
+                            color: inherit;
+                            text-decoration: none;
+
+                            &:last-of-type {
+                                margin: 0 0 0 20px;
+                            }
+
+                            &:hover {
+                                color: $accent_jaune;
+                                font-size: 1.2em;
+                                margin: 0 10px;
+                            }
+                        }
+                    }
+                }
+                    
+                img {
+                    width: 60%;
+                    padding: 100px 0 0 0;
+                    margin-left: -50%;
+                }
+            }
+            
+        }
+    } 
+        
 }
