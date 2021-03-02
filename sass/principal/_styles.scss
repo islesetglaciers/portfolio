@@ -56,53 +56,89 @@ html {
         }
     }
     
-    .contenu {
-        .titre {
-            font-family: $erica_one;
-            display: flex;
-            flex-wrap: wrap;
-            font-size: 9em;
-            font-weight: 400;
-            text-transform: uppercase;
-            letter-spacing: 0.3em;
-            
-            span {
-                width: 100%;
+    #accueil {
+        .contenu {
+            .titre {
+                font-family: $erica_one;
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 9em;
+                font-weight: 400;
+                text-transform: uppercase;
+                letter-spacing: 0.3em;
+                
+                span {
+                    width: 100%;
+                }
+    
+                #prenom,
+                #nom {
+                    position: relative;
+                    left: -15px;
+                }
+    
+                #prenom {
+                    font-size: 1.8em;
+                }
+    
+                #nom {
+                    top: -90px;
+                }
             }
-
-            #prenom,
-            #nom {
-                position: relative;
-                left: -15px;
+    
+            .description {
+                text-align: right;
+                width: 50%;
+                margin-left: 45%;
+                font-size: 1.75em;
             }
-
-            #prenom {
-                font-size: 1.8em;
-            }
-
-            #nom {
-                top: -90px;
-            }
-        }
-
-        .description {
-            text-align: right;
-            width: 50%;
-            margin-left: 45%;
-            font-size: 1.75em;
-        }
-
-        .liens-social {
-            font-size: 2em;
-            margin-left: 20px;
-            letter-spacing: 0.1em;
-            span {
-                a {
-                    color: inherit;
+    
+            .liens-social {
+                font-size: 2em;
+                margin-left: 20px;
+                letter-spacing: 0.1em;
+                span {
+                    a {
+                        color: inherit;
+                    }
                 }
             }
         }
     }
     
+    #a-propos {
+        .contenu {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 85%;
+            margin: 0 auto;
+
+            .photo {
+                h1 {
+                    font-family: $erica_one;
+                    font-size: 3em;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    letter-spacing: 0.3em;
+                    position: relative;
+                    top: 70%;
+                    left: 40%;
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .description {
+                width: 60%;
+                margin-top: 20%;
+                margin-left: 20%;
+                font-weight: 400;
+                line-height: 1.75em;
+            }
+        }
+    }
     
 }

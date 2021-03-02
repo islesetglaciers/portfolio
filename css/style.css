@@ -423,7 +423,7 @@ html header #menu li .actif {
   font-weight: 900;
 }
 
-html .contenu .titre {
+html #accueil .contenu .titre {
   font-family: "Erica One", cursive;
   display: flex;
   flex-wrap: wrap;
@@ -433,38 +433,69 @@ html .contenu .titre {
   letter-spacing: 0.3em;
 }
 
-html .contenu .titre span {
+html #accueil .contenu .titre span {
   width: 100%;
 }
 
-html .contenu .titre #prenom,
-html .contenu .titre #nom {
+html #accueil .contenu .titre #prenom,
+html #accueil .contenu .titre #nom {
   position: relative;
   left: -15px;
 }
 
-html .contenu .titre #prenom {
+html #accueil .contenu .titre #prenom {
   font-size: 1.8em;
 }
 
-html .contenu .titre #nom {
+html #accueil .contenu .titre #nom {
   top: -90px;
 }
 
-html .contenu .description {
+html #accueil .contenu .description {
   text-align: right;
   width: 50%;
   margin-left: 45%;
   font-size: 1.75em;
 }
 
-html .contenu .liens-social {
+html #accueil .contenu .liens-social {
   font-size: 2em;
   margin-left: 20px;
   letter-spacing: 0.1em;
 }
 
-html .contenu .liens-social span a {
+html #accueil .contenu .liens-social span a {
   color: inherit;
+}
+
+html #a-propos .contenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 85%;
+  margin: 0 auto;
+}
+
+html #a-propos .contenu .photo h1 {
+  font-family: "Erica One", cursive;
+  font-size: 3em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  position: relative;
+  top: 70%;
+  left: 40%;
+}
+
+html #a-propos .contenu .photo img {
+  width: 100%;
+}
+
+html #a-propos .contenu .description {
+  width: 60%;
+  margin-top: 20%;
+  margin-left: 20%;
+  font-weight: 400;
+  line-height: 1.75em;
 }
 /*# sourceMappingURL=style.css.map */
