@@ -4,6 +4,7 @@
 ------------------------------------------
 # Général
     Normalize
+    Box Border
 # Variables
     Couleurs
     Polices
@@ -27,7 +28,6 @@ html {
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
-  box-sizing: border-box;
 }
 
 /* Sections
@@ -355,6 +355,12 @@ template {
   display: none;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 /* ---------------------------------------
 # Variables
 ----------------------------------------*/
@@ -364,11 +370,13 @@ template {
 # Principal
 ----------------------------------------*/
 /* Styles ---------------------*/
+::selection {
+  background: #b1d19d;
+  color: #ffde59;
+}
+
 @media only screen and (max-width: 600px) {
   html {
-    background: linear-gradient(113deg, #a4bfeb 0%, #f7b1ab 37%, #ffde59 90%, #a4bfeb 100%);
-    width: 100vw;
-    height: 100vh;
     font-family: "Montserrat", sans-serif;
     color: white;
   }
@@ -415,6 +423,11 @@ template {
   }
   html header #menu li .actif {
     font-weight: 900;
+  }
+  html #accueil {
+    background: linear-gradient(113deg, #a4bfeb 0%, #f7b1ab 37%, #ffde59 90%, #a4bfeb 100%);
+    width: 100vw;
+    height: 100vh;
   }
   html #accueil .contenu {
     width: 100%;
@@ -463,9 +476,6 @@ template {
 
 @media only screen and (min-width: 601px) {
   html {
-    background: linear-gradient(113deg, #a4bfeb 0%, #f7b1ab 37%, #ffde59 90%, #a4bfeb 100%);
-    width: 100vw;
-    height: 100vh;
     font-family: "Montserrat", sans-serif;
     color: white;
   }
@@ -513,6 +523,10 @@ template {
   html header #menu li .actif {
     font-weight: 900;
   }
+  html #accueil {
+    background: linear-gradient(113deg, #a4bfeb 0%, #f7b1ab 37%, #ffde59 90%, #a4bfeb 100%);
+    height: 100vh;
+  }
   html #accueil .contenu {
     width: 100%;
   }
@@ -556,6 +570,10 @@ template {
   html #accueil .contenu .liens-social span a {
     color: inherit;
   }
+  html #a-propos {
+    background: linear-gradient(113deg, #ffde59 0%, #a4bfeb 40%, #f7b1ab 84%, #ffde59 100%);
+    height: 100vh;
+  }
   html #a-propos .contenu {
     display: flex;
     flex-direction: row;
@@ -583,6 +601,10 @@ template {
     font-weight: 400;
     line-height: 1.75em;
   }
+  html #projets {
+    background: linear-gradient(113deg, #f7b1ab 0%, #ffde59 45%, #a4bfeb 80%, #f7b1ab 100%);
+    height: 100vh;
+  }
   html #projets .contenu {
     width: 85%;
     margin: 0 auto;
@@ -606,7 +628,7 @@ template {
     margin: 0 0 0 20px;
   }
   html #projets .contenu .description .projet a:hover {
-    color: #ffde59;
+    color: #b1d19d;
     font-size: 1.2em;
     margin: 0 10px;
   }
@@ -614,6 +636,66 @@ template {
     width: 60%;
     padding: 100px 0 0 0;
     margin-left: -50%;
+  }
+  html .projet {
+    background: #f7b1ab;
+  }
+  html .projet .contenu {
+    width: 85%;
+    margin: 0 auto;
+  }
+  html .projet .contenu .titre {
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-top: 100px;
+    margin-bottom: 0;
+  }
+  html .projet .contenu .titre .nom-projet {
+    font-family: "Erica One", cursive;
+    font-weight: 400;
+  }
+  html .projet .contenu .titre .annee {
+    font-family: "Chivo", sans-serif;
+    font-weight: 300;
+    font-size: .75em;
+  }
+  html .projet .contenu .desc-img {
+    display: flex;
+    flex-direction: row;
+  }
+  html .projet .contenu .desc-img .description {
+    margin-top: 100px;
+    width: 45%;
+    line-height: 2em;
+    font-size: 0.95em;
+  }
+  html .projet .contenu .desc-img .image-principale {
+    padding: 0;
+    margin-left: 50px;
+    width: 50%;
+  }
+  html .projet .contenu .desc-img .image-principale img {
+    width: 100%;
+  }
+  html .projet .contenu .desc-img .image-principale .lien {
+    background-color: #a4bfeb;
+    text-transform: uppercase;
+    position: relative;
+    left: 75%;
+    bottom: 15px;
+    padding: 15px;
+  }
+  html .projet .contenu .desc-img .image-principale .lien a {
+    color: inherit;
+    text-decoration: none;
+    font-family: "Chivo", sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+    transition: 0.5s;
+  }
+  html .projet .contenu .desc-img .image-principale .lien a:hover {
+    letter-spacing: 0.2em;
   }
 }
 /*# sourceMappingURL=style.css.map */

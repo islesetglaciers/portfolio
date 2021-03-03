@@ -1,8 +1,10 @@
+::selection {
+    background: $accent_vert;
+    color: $accent_jaune;
+}
+
 @media only screen and (max-width: 600px) {
     html {
-        background: linear-gradient(113deg, rgba(164,191,235,1) 0%, rgba(247,177,171,1) 37%, rgba(255,222,89,1) 90%, rgba(164,191,235,1) 100%);
-        width: 100vw;
-        height: 100vh;
         font-family: $montserrat;
         color: white;
     
@@ -58,6 +60,11 @@
         }
     
         #accueil {
+            background: linear-gradient(113deg, rgba(164,191,235,1) 0%, rgba(247,177,171,1) 37%, rgba(255,222,89,1) 90%, rgba(164,191,235,1) 100%);
+            width: 100vw;
+            height: 100vh;
+            
+
             .contenu {
                 width: 100%;
     
@@ -117,9 +124,6 @@
 // Tablettes et plus grand
 @media only screen and (min-width: 601px) {
     html {
-        background: linear-gradient(113deg, rgba(164,191,235,1) 0%, rgba(247,177,171,1) 37%, rgba(255,222,89,1) 90%, rgba(164,191,235,1) 100%);
-        width: 100vw;
-        height: 100vh;
         font-family: $montserrat;
         color: white;
     
@@ -175,6 +179,10 @@
         }
         
         #accueil {
+            background: linear-gradient(113deg, rgba(164,191,235,1) 0%, rgba(247,177,171,1) 37%, rgba(255,222,89,1) 90%, rgba(164,191,235,1) 100%);
+            // width: 100vw;
+            height: 100vh;
+
             .contenu {
                 width: 100%;
     
@@ -230,6 +238,10 @@
         }
         
         #a-propos {
+            background: linear-gradient(113deg, rgba(255,222,89,1) 0%, rgba(164,191,235,1) 40%, rgba(247,177,171,1) 84%, rgba(255,222,89,1) 100%);
+            // width: 100vw;
+            height: 100vh;
+
             .contenu {
                 display: flex;
                 flex-direction: row;
@@ -265,6 +277,10 @@
         }
 
         #projets {
+            background: linear-gradient(113deg, rgba(247,177,171,1) 0%, rgba(255,222,89,1) 45%, rgba(164,191,235,1) 80%, rgba(247,177,171,1) 100%);
+            // width: 100vw;
+            height: 100vh;
+
             .contenu {
                 width: 85%;
                 margin: 0 auto;
@@ -290,7 +306,7 @@
                             }
 
                             &:hover {
-                                color: $accent_jaune;
+                                color: $accent_vert;
                                 font-size: 1.2em;
                                 margin: 0 10px;
                             }
@@ -305,6 +321,80 @@
                 }
             }
             
+        }
+
+        .projet {
+            background: $accent_rose;
+            // width: 100vw;
+
+            .contenu {
+                width: 85%;
+                margin: 0 auto;
+
+                .titre {
+                    font-size: 3em;
+                    text-transform: uppercase;
+                    letter-spacing: 0.2em;
+                    margin-top: 100px;
+                    margin-bottom: 0;
+
+                    .nom-projet {
+                        font-family: $erica_one;
+                        font-weight: 400;
+                    }
+                    .annee {
+                        font-family: $chivo;
+                        font-weight: 300;
+                        font-size: .75em;
+                    }
+                }
+                
+                .desc-img {
+                    display: flex;
+                    flex-direction: row;
+                    // flex-wrap: wrap;
+
+                    .description {
+                        margin-top: 100px;
+                        width: 45%;
+                        line-height: 2em;
+                        font-size: 0.95em;
+                    }
+
+                    .image-principale {
+                        padding: 0;
+                        margin-left: 50px;
+                        width: 50%;
+
+                        img {
+                            width: 100%;
+                        }
+
+                        .lien {
+                            background-color: $accent_bleu;
+                            text-transform: uppercase;
+                            position: relative;
+                            left: 75%;
+                            bottom: 15px;
+                            padding: 15px;
+
+                            a {
+                                color: inherit;
+                                text-decoration: none;
+                                font-family: $chivo;
+                                font-weight: 300;
+                                font-size: 1.5em;
+                                transition: 0.5s;
+
+                                &:hover {
+                                    letter-spacing: 0.2em;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
         }
     } 
         
