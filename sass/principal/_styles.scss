@@ -3,94 +3,343 @@
     color: $accent_jaune;
 }
 
-@media only screen and (max-width: 600px) {
-    html {
-        font-family: $montserrat;
-        color: white;
+html {
+    font-family: $montserrat;
+    color: white;
+
+    header {
+        display: flex;
+
+        .menu-nav {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-family: $chivo;
+            font-weight: 300;
+            text-transform: uppercase;
+            font-size: 1.5em;
+            border-bottom: 1px solid white;
+            padding: 8px 0;
+            margin: 20px;
+            cursor: pointer;
+            transition: 0.5s;
+
+            &:hover {
+                letter-spacing: 0.2em;
+            }
+        }
+
+        #menu {
+            display: none;
+            width: 100%;
+            background-color: $accent_rose;
+            list-style: none;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-end;
+            margin: 0;
+            // height: 100vh;
+            font-family: $chivo;
+            letter-spacing: 0.2em;
+            font-size: 1.5em;
     
-        header {
-            display: flex;
+            li {
+                padding: 0 150px 0 0;
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                    text-transform: uppercase;
+                }
     
-            .menu-nav {
-                position: absolute;
-                top: 0;
-                right: 0;
-                font-family: $chivo;
-                font-weight: 300;
+                .actif {
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+    
+    #accueil {
+        background: linear-gradient(113deg, rgba(164,191,235,1) 0%, rgba(247,177,171,1) 37%, rgba(255,222,89,1) 90%, rgba(164,191,235,1) 100%);
+        // width: 100vw;
+        height: 100vh;
+
+        .contenu {
+            width: 100%;
+
+            .titre {
+                font-family: $erica_one;
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 9em;
+                font-weight: 400;
                 text-transform: uppercase;
-                font-size: 1.5em;
-                border-bottom: 1px solid white;
-                padding: 8px 0;
-                margin: 20px;
-                cursor: pointer;
-                transition: 0.5s;
+                letter-spacing: 0.3em;
+                margin-bottom: 0;
+                
+                span {
+                    width: 100%;
+                }
     
-                &:hover {
-                    letter-spacing: 0.2em;
+                #prenom,
+                #nom {
+                    position: relative;
+                    left: -15px;
+                }
+    
+                #prenom {
+                    font-size: 1.8em;
+                }
+    
+                #nom {
+                    top: -90px;
                 }
             }
     
-            #menu {
-                display: none;
-                width: 100%;
-                background-color: $accent_rose;
-                list-style: none;
-                flex-direction: column;
-                justify-content: space-around;
-                align-items: flex-end;
-                margin: 0;
-                // height: 100vh;
-                font-family: $chivo;
-                letter-spacing: 0.2em;
-                font-size: 1.5em;
-        
-                li {
-                    padding: 0 150px 0 0;
+            .description {
+                text-align: right;
+                width: 50%;
+                margin-left: 45%;
+                font-size: 1.75em;
+            }
+    
+            .liens-social {
+                position: absolute;
+                bottom: 30px;
+                left: 30px;
+                font-size: 2em;
+                letter-spacing: 0.1em;
+                span {
                     a {
-                        text-decoration: none;
                         color: inherit;
-                        text-transform: uppercase;
-                    }
-        
-                    .actif {
-                        font-weight: 900;
                     }
                 }
             }
         }
+    }
     
-        #accueil {
-            background: linear-gradient(113deg, rgba(164,191,235,1) 0%, rgba(247,177,171,1) 37%, rgba(255,222,89,1) 90%, rgba(164,191,235,1) 100%);
-            width: 100vw;
-            height: 100vh;
-            
+    #a-propos {
+        background: linear-gradient(113deg, rgba(255,222,89,1) 0%, rgba(164,191,235,1) 40%, rgba(247,177,171,1) 84%, rgba(255,222,89,1) 100%);
+        // width: 100vw;
+        height: 100vh;
 
-            .contenu {
-                width: 100%;
-    
-                .titre {
+        .contenu {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 85%;
+            margin: 0 auto;
+
+            .photo {
+                h1 {
                     font-family: $erica_one;
-                    display: flex;
-                    flex-wrap: wrap;
-                    font-size: 4.5em;
+                    font-size: 3em;
                     font-weight: 400;
                     text-transform: uppercase;
                     letter-spacing: 0.3em;
-                    padding-top: 50px;
-                    
-                    span {
+                    position: relative;
+                    top: 70%;
+                    left: 40%;
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .description {
+                width: 60%;
+                margin-top: 20%;
+                margin-left: 20%;
+                font-weight: 400;
+                line-height: 1.75em;
+            }
+        }
+    }
+
+    #projets {
+        background: linear-gradient(113deg, rgba(247,177,171,1) 0%, rgba(255,222,89,1) 45%, rgba(164,191,235,1) 80%, rgba(247,177,171,1) 100%);
+        // width: 100vw;
+        height: 100vh;
+
+        .contenu {
+            width: 85%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+
+            .description {
+                font-family: $erica_one;
+                font-size: 5em;
+                padding-top: 35%;
+                width: 100%;
+                z-index: 10;
+
+                .num-projet {
+                    a {
+                        margin: 0 20px;
+                        transition: 0.5s;
+                        color: inherit;
+                        text-decoration: none;
+
+                        &:last-of-type {
+                            margin: 0 0 0 20px;
+                        }
+
+                        &:hover {
+                            color: $accent_vert;
+                            font-size: 1.2em;
+                            margin: 0 10px;
+                        }
+                    }
+                }
+            }
+                
+            img {
+                width: 60%;
+                padding: 100px 0 0 0;
+                margin-left: -50%;
+            }
+        }
+        
+    }
+
+    .projet {
+        background: $accent_rose;
+        // width: 100vw;
+
+        .contenu {
+            width: 85%;
+            margin: 0 auto;
+
+            .titre {
+                font-size: 3em;
+                text-transform: uppercase;
+                letter-spacing: 0.2em;
+                margin-top: 100px;
+                margin-bottom: 0;
+
+                .nom-projet {
+                    font-family: $erica_one;
+                    font-weight: 400;
+                }
+                .annee {
+                    font-family: $chivo;
+                    font-weight: 300;
+                    font-size: .75em;
+                }
+            }
+            
+            .desc-img {
+                display: flex;
+                flex-direction: row;
+                // flex-wrap: wrap;
+
+                .description {
+                    margin-top: 100px;
+                    width: 45%;
+                    line-height: 2em;
+                    font-size: 0.95em;
+                }
+
+                .image-principale {
+                    padding: 0;
+                    margin-left: 50px;
+                    width: 50%;
+
+                    img {
+                        margin-top: 50px;
                         width: 100%;
                     }
-        
-                    #prenom,
-                    #nom {
+
+                    .lien {
+                        background-color: $accent_bleu;
+                        text-transform: uppercase;
                         position: relative;
-                        left: -15px;
+                        left: 75%;
+                        bottom: 15px;
+                        padding: 15px;
+
+                        a {
+                            color: inherit;
+                            text-decoration: none;
+                            font-family: $chivo;
+                            font-weight: 300;
+                            font-size: 1.5em;
+                            transition: 0.5s;
+
+                            &:hover {
+                                letter-spacing: 0.2em;
+                            }
+                        }
                     }
+                }
+            }
+            
+        }
+    }
+}
+
+// Tablettes
+@media only screen and (max-width: 992px) {
+
+}
+
+// Petites tablettes / Grands mobiles
+@media only screen and (max-width: 768px) {
+
+}
+
+// Mobiles
+@media only screen and (max-width: 600px) {
+    html {
+        // header {    
+        //     .menu-nav {
+        //         position: absolute;
+        //         top: 0;
+        //         right: 0;
+        //         font-family: $chivo;
+        //         font-weight: 300;
+        //         text-transform: uppercase;
+        //         font-size: 1.5em;
+        //         border-bottom: 1px solid white;
+        //         padding: 8px 0;
+        //         margin: 20px;
+        //     }
+    
+        //     #menu {
+        //         display: none;
+        //         width: 100%;
+        //         background-color: $accent_rose;
+        //         list-style: none;
+        //         flex-direction: column;
+        //         justify-content: space-around;
+        //         align-items: flex-end;
+        //         margin: 0;
+        //         // height: 100vh;
+        //         font-family: $chivo;
+        //         letter-spacing: 0.2em;
+        //         font-size: 1.5em;
         
-                    #prenom {
-                        font-size: 1.8em;
-                    }
+        //         li {
+        //             padding: 0 150px 0 0;
+        //             a {
+        //                 text-decoration: none;
+        //                 color: inherit;
+        //                 text-transform: uppercase;
+        //             }
+        
+        //             .actif {
+        //                 font-weight: 900;
+        //             }
+        //         }
+        //     }
+        // }
+    
+        #accueil { 
+            .contenu {    
+                .titre {
+                    font-size: 4.5em;
+                    padding-top: 50px;
         
                     #nom {
                         top: -45px;
@@ -98,296 +347,120 @@
                 }
         
                 .description {
-                    text-align: right;
                     width: 60%;
                     margin-left: 35%;
                     font-size: 1.3em;
                 }
         
                 .liens-social {
-                    position: absolute;
                     bottom: 20px;
                     left: 20px;
-                    font-size: 2em;
-                    letter-spacing: 0.1em;
-                    span {
-                        a {
-                            color: inherit;
-                        }
-                    }
                 }
             }
         }
-    }
-}
 
-// Tablettes et plus grand
-@media only screen and (min-width: 601px) {
-    html {
-        font-family: $montserrat;
-        color: white;
-    
-        header {
-            display: flex;
-    
-            .menu-nav {
-                position: absolute;
-                top: 0;
-                right: 0;
-                font-family: $chivo;
-                font-weight: 300;
-                text-transform: uppercase;
-                font-size: 1.5em;
-                border-bottom: 1px solid white;
-                padding: 8px 0;
-                margin: 20px;
-                cursor: pointer;
-                transition: 0.5s;
-    
-                &:hover {
-                    letter-spacing: 0.2em;
-                }
-            }
-    
-            #menu {
-                display: none;
-                width: 100%;
-                background-color: $accent_rose;
-                list-style: none;
+        #a-propos {   
+            height: 100%; 
+
+            .contenu {
                 flex-direction: column;
-                justify-content: space-around;
-                align-items: flex-end;
-                margin: 0;
-                // height: 100vh;
-                font-family: $chivo;
-                letter-spacing: 0.2em;
-                font-size: 1.5em;
-        
-                li {
-                    padding: 0 150px 0 0;
-                    a {
-                        text-decoration: none;
-                        color: inherit;
-                        text-transform: uppercase;
-                    }
-        
-                    .actif {
-                        font-weight: 900;
-                    }
-                }
-            }
-        }
-        
-        #accueil {
-            background: linear-gradient(113deg, rgba(164,191,235,1) 0%, rgba(247,177,171,1) 37%, rgba(255,222,89,1) 90%, rgba(164,191,235,1) 100%);
-            // width: 100vw;
-            height: 100vh;
-
-            .contenu {
-                width: 100%;
     
-                .titre {
-                    font-family: $erica_one;
-                    display: flex;
-                    flex-wrap: wrap;
-                    font-size: 9em;
-                    font-weight: 400;
-                    text-transform: uppercase;
-                    letter-spacing: 0.3em;
-                    margin-bottom: 0;
-                    
-                    span {
-                        width: 100%;
-                    }
-        
-                    #prenom,
-                    #nom {
-                        position: relative;
-                        left: -15px;
-                    }
-        
-                    #prenom {
-                        font-size: 1.8em;
-                    }
-        
-                    #nom {
-                        top: -90px;
-                    }
-                }
-        
-                .description {
-                    text-align: right;
-                    width: 50%;
-                    margin-left: 45%;
-                    font-size: 1.75em;
-                }
-        
-                .liens-social {
-                    position: absolute;
-                    bottom: 30px;
-                    left: 30px;
-                    font-size: 2em;
-                    letter-spacing: 0.1em;
-                    span {
-                        a {
-                            color: inherit;
-                        }
-                    }
-                }
-            }
-        }
-        
-        #a-propos {
-            background: linear-gradient(113deg, rgba(255,222,89,1) 0%, rgba(164,191,235,1) 40%, rgba(247,177,171,1) 84%, rgba(255,222,89,1) 100%);
-            // width: 100vw;
-            height: 100vh;
-
-            .contenu {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                width: 85%;
-                margin: 0 auto;
-
                 .photo {
                     h1 {
-                        font-family: $erica_one;
-                        font-size: 3em;
-                        font-weight: 400;
-                        text-transform: uppercase;
-                        letter-spacing: 0.3em;
-                        position: relative;
-                        top: 70%;
-                        left: 40%;
+                        font-size: 2.15em;
+                        top: 70px;
+                        left: 10px;
                     }
-
+    
                     img {
-                        width: 100%;
+                        padding-top: 25px;
+                        width: 75%;
                     }
                 }
-
+    
                 .description {
-                    width: 60%;
-                    margin-top: 20%;
-                    margin-left: 20%;
-                    font-weight: 400;
-                    line-height: 1.75em;
+                    width: 100%;
+                    margin: 40px 0 50px 0;
+                    font-size: 0.8em;
+                    line-height: 2.5em;
                 }
             }
         }
 
-        #projets {
-            background: linear-gradient(113deg, rgba(247,177,171,1) 0%, rgba(255,222,89,1) 45%, rgba(164,191,235,1) 80%, rgba(247,177,171,1) 100%);
-            // width: 100vw;
-            height: 100vh;
-
+        #projets {    
             .contenu {
-                width: 85%;
-                margin: 0 auto;
-                display: flex;
-                flex-direction: row;
-
-                .description {
-                    font-family: $erica_one;
-                    font-size: 5em;
-                    padding-top: 35%;
+                flex-direction: column;
+                flex-flow: column-reverse;
+    
+                .description {  
+                    font-size: 3em;
+                    padding-top: 20px;
                     width: 100%;
-                    z-index: 10;
-
-                    .projet {
+                    text-align: center;
+    
+                    .num-projet {
                         a {
-                            margin: 0 20px;
-                            transition: 0.5s;
+                            margin: 10px;
                             color: inherit;
                             text-decoration: none;
-
+    
                             &:last-of-type {
-                                margin: 0 0 0 20px;
+                                margin: 10px;
                             }
-
+    
                             &:hover {
-                                color: $accent_vert;
-                                font-size: 1.2em;
-                                margin: 0 10px;
+                                color: inherit;
+                                font-size: 1em;
+                                margin: 10px;
                             }
                         }
                     }
                 }
-                    
+        
                 img {
-                    width: 60%;
-                    padding: 100px 0 0 0;
-                    margin-left: -50%;
+                    width: 100%;
+                    padding: 0;
+                    margin: 200px 0 0 0;
                 }
             }
             
         }
 
-        .projet {
-            background: $accent_rose;
-            // width: 100vw;
-
-            .contenu {
-                width: 85%;
-                margin: 0 auto;
-
+        .projet {    
+            .contenu {    
                 .titre {
-                    font-size: 3em;
-                    text-transform: uppercase;
-                    letter-spacing: 0.2em;
-                    margin-top: 100px;
-                    margin-bottom: 0;
+                    font-size: 2em;
+                    margin-top: 125px;
 
-                    .nom-projet {
-                        font-family: $erica_one;
-                        font-weight: 400;
-                    }
                     .annee {
-                        font-family: $chivo;
-                        font-weight: 300;
-                        font-size: .75em;
+                        font-size: .65em;
                     }
                 }
                 
                 .desc-img {
-                    display: flex;
-                    flex-direction: row;
-                    // flex-wrap: wrap;
-
+                    flex-direction: column;
+                    flex-flow: column-reverse;
+    
                     .description {
-                        margin-top: 100px;
-                        width: 45%;
-                        line-height: 2em;
-                        font-size: 0.95em;
+                        margin-top: 40px;
+                        width: 100%;
+                        font-size: 0.85em;
                     }
-
+    
                     .image-principale {
-                        padding: 0;
-                        margin-left: 50px;
-                        width: 50%;
-
-                        img {
-                            width: 100%;
-                        }
-
+                        padding-top: 40px;
+                        margin-left: 0;
+                        width: 100%;
+    
                         .lien {
-                            background-color: $accent_bleu;
-                            text-transform: uppercase;
-                            position: relative;
-                            left: 75%;
-                            bottom: 15px;
-                            padding: 15px;
-
+                            left: 60%;
+                            padding: 12px;
+    
                             a {
-                                color: inherit;
-                                text-decoration: none;
-                                font-family: $chivo;
-                                font-weight: 300;
-                                font-size: 1.5em;
-                                transition: 0.5s;
-
+                                font-size: 1.25em;
+    
                                 &:hover {
-                                    letter-spacing: 0.2em;
+                                    letter-spacing: inherit;
                                 }
                             }
                         }

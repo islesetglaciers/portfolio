@@ -375,327 +375,367 @@ template {
   color: #ffde59;
 }
 
+html {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+html header {
+  display: flex;
+}
+
+html header .menu-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: "Chivo", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  border-bottom: 1px solid white;
+  padding: 8px 0;
+  margin: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+html header .menu-nav:hover {
+  letter-spacing: 0.2em;
+}
+
+html header #menu {
+  display: none;
+  width: 100%;
+  background-color: #f7b1ab;
+  list-style: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin: 0;
+  font-family: "Chivo", sans-serif;
+  letter-spacing: 0.2em;
+  font-size: 1.5em;
+}
+
+html header #menu li {
+  padding: 0 150px 0 0;
+}
+
+html header #menu li a {
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+html header #menu li .actif {
+  font-weight: 900;
+}
+
+html #accueil {
+  background: linear-gradient(113deg, #a4bfeb 0%, #f7b1ab 37%, #ffde59 90%, #a4bfeb 100%);
+  height: 100vh;
+}
+
+html #accueil .contenu {
+  width: 100%;
+}
+
+html #accueil .contenu .titre {
+  font-family: "Erica One", cursive;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 9em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  margin-bottom: 0;
+}
+
+html #accueil .contenu .titre span {
+  width: 100%;
+}
+
+html #accueil .contenu .titre #prenom,
+html #accueil .contenu .titre #nom {
+  position: relative;
+  left: -15px;
+}
+
+html #accueil .contenu .titre #prenom {
+  font-size: 1.8em;
+}
+
+html #accueil .contenu .titre #nom {
+  top: -90px;
+}
+
+html #accueil .contenu .description {
+  text-align: right;
+  width: 50%;
+  margin-left: 45%;
+  font-size: 1.75em;
+}
+
+html #accueil .contenu .liens-social {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  font-size: 2em;
+  letter-spacing: 0.1em;
+}
+
+html #accueil .contenu .liens-social span a {
+  color: inherit;
+}
+
+html #a-propos {
+  background: linear-gradient(113deg, #ffde59 0%, #a4bfeb 40%, #f7b1ab 84%, #ffde59 100%);
+  height: 100vh;
+}
+
+html #a-propos .contenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 85%;
+  margin: 0 auto;
+}
+
+html #a-propos .contenu .photo h1 {
+  font-family: "Erica One", cursive;
+  font-size: 3em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  position: relative;
+  top: 70%;
+  left: 40%;
+}
+
+html #a-propos .contenu .photo img {
+  width: 100%;
+}
+
+html #a-propos .contenu .description {
+  width: 60%;
+  margin-top: 20%;
+  margin-left: 20%;
+  font-weight: 400;
+  line-height: 1.75em;
+}
+
+html #projets {
+  background: linear-gradient(113deg, #f7b1ab 0%, #ffde59 45%, #a4bfeb 80%, #f7b1ab 100%);
+  height: 100vh;
+}
+
+html #projets .contenu {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+html #projets .contenu .description {
+  font-family: "Erica One", cursive;
+  font-size: 5em;
+  padding-top: 35%;
+  width: 100%;
+  z-index: 10;
+}
+
+html #projets .contenu .description .num-projet a {
+  margin: 0 20px;
+  transition: 0.5s;
+  color: inherit;
+  text-decoration: none;
+}
+
+html #projets .contenu .description .num-projet a:last-of-type {
+  margin: 0 0 0 20px;
+}
+
+html #projets .contenu .description .num-projet a:hover {
+  color: #b1d19d;
+  font-size: 1.2em;
+  margin: 0 10px;
+}
+
+html #projets .contenu img {
+  width: 60%;
+  padding: 100px 0 0 0;
+  margin-left: -50%;
+}
+
+html .projet {
+  background: #f7b1ab;
+}
+
+html .projet .contenu {
+  width: 85%;
+  margin: 0 auto;
+}
+
+html .projet .contenu .titre {
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-top: 100px;
+  margin-bottom: 0;
+}
+
+html .projet .contenu .titre .nom-projet {
+  font-family: "Erica One", cursive;
+  font-weight: 400;
+}
+
+html .projet .contenu .titre .annee {
+  font-family: "Chivo", sans-serif;
+  font-weight: 300;
+  font-size: .75em;
+}
+
+html .projet .contenu .desc-img {
+  display: flex;
+  flex-direction: row;
+}
+
+html .projet .contenu .desc-img .description {
+  margin-top: 100px;
+  width: 45%;
+  line-height: 2em;
+  font-size: 0.95em;
+}
+
+html .projet .contenu .desc-img .image-principale {
+  padding: 0;
+  margin-left: 50px;
+  width: 50%;
+}
+
+html .projet .contenu .desc-img .image-principale img {
+  margin-top: 50px;
+  width: 100%;
+}
+
+html .projet .contenu .desc-img .image-principale .lien {
+  background-color: #a4bfeb;
+  text-transform: uppercase;
+  position: relative;
+  left: 75%;
+  bottom: 15px;
+  padding: 15px;
+}
+
+html .projet .contenu .desc-img .image-principale .lien a {
+  color: inherit;
+  text-decoration: none;
+  font-family: "Chivo", sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  transition: 0.5s;
+}
+
+html .projet .contenu .desc-img .image-principale .lien a:hover {
+  letter-spacing: 0.2em;
+}
+
 @media only screen and (max-width: 600px) {
-  html {
-    font-family: "Montserrat", sans-serif;
-    color: white;
-  }
-  html header {
-    display: flex;
-  }
-  html header .menu-nav {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-family: "Chivo", sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    border-bottom: 1px solid white;
-    padding: 8px 0;
-    margin: 20px;
-    cursor: pointer;
-    transition: 0.5s;
-  }
-  html header .menu-nav:hover {
-    letter-spacing: 0.2em;
-  }
-  html header #menu {
-    display: none;
-    width: 100%;
-    background-color: #f7b1ab;
-    list-style: none;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-end;
-    margin: 0;
-    font-family: "Chivo", sans-serif;
-    letter-spacing: 0.2em;
-    font-size: 1.5em;
-  }
-  html header #menu li {
-    padding: 0 150px 0 0;
-  }
-  html header #menu li a {
-    text-decoration: none;
-    color: inherit;
-    text-transform: uppercase;
-  }
-  html header #menu li .actif {
-    font-weight: 900;
-  }
-  html #accueil {
-    background: linear-gradient(113deg, #a4bfeb 0%, #f7b1ab 37%, #ffde59 90%, #a4bfeb 100%);
-    width: 100vw;
-    height: 100vh;
-  }
-  html #accueil .contenu {
-    width: 100%;
-  }
   html #accueil .contenu .titre {
-    font-family: "Erica One", cursive;
-    display: flex;
-    flex-wrap: wrap;
     font-size: 4.5em;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0.3em;
     padding-top: 50px;
-  }
-  html #accueil .contenu .titre span {
-    width: 100%;
-  }
-  html #accueil .contenu .titre #prenom,
-  html #accueil .contenu .titre #nom {
-    position: relative;
-    left: -15px;
-  }
-  html #accueil .contenu .titre #prenom {
-    font-size: 1.8em;
   }
   html #accueil .contenu .titre #nom {
     top: -45px;
   }
   html #accueil .contenu .description {
-    text-align: right;
     width: 60%;
     margin-left: 35%;
     font-size: 1.3em;
   }
   html #accueil .contenu .liens-social {
-    position: absolute;
     bottom: 20px;
     left: 20px;
-    font-size: 2em;
-    letter-spacing: 0.1em;
-  }
-  html #accueil .contenu .liens-social span a {
-    color: inherit;
-  }
-}
-
-@media only screen and (min-width: 601px) {
-  html {
-    font-family: "Montserrat", sans-serif;
-    color: white;
-  }
-  html header {
-    display: flex;
-  }
-  html header .menu-nav {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-family: "Chivo", sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    border-bottom: 1px solid white;
-    padding: 8px 0;
-    margin: 20px;
-    cursor: pointer;
-    transition: 0.5s;
-  }
-  html header .menu-nav:hover {
-    letter-spacing: 0.2em;
-  }
-  html header #menu {
-    display: none;
-    width: 100%;
-    background-color: #f7b1ab;
-    list-style: none;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-end;
-    margin: 0;
-    font-family: "Chivo", sans-serif;
-    letter-spacing: 0.2em;
-    font-size: 1.5em;
-  }
-  html header #menu li {
-    padding: 0 150px 0 0;
-  }
-  html header #menu li a {
-    text-decoration: none;
-    color: inherit;
-    text-transform: uppercase;
-  }
-  html header #menu li .actif {
-    font-weight: 900;
-  }
-  html #accueil {
-    background: linear-gradient(113deg, #a4bfeb 0%, #f7b1ab 37%, #ffde59 90%, #a4bfeb 100%);
-    height: 100vh;
-  }
-  html #accueil .contenu {
-    width: 100%;
-  }
-  html #accueil .contenu .titre {
-    font-family: "Erica One", cursive;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 9em;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0.3em;
-    margin-bottom: 0;
-  }
-  html #accueil .contenu .titre span {
-    width: 100%;
-  }
-  html #accueil .contenu .titre #prenom,
-  html #accueil .contenu .titre #nom {
-    position: relative;
-    left: -15px;
-  }
-  html #accueil .contenu .titre #prenom {
-    font-size: 1.8em;
-  }
-  html #accueil .contenu .titre #nom {
-    top: -90px;
-  }
-  html #accueil .contenu .description {
-    text-align: right;
-    width: 50%;
-    margin-left: 45%;
-    font-size: 1.75em;
-  }
-  html #accueil .contenu .liens-social {
-    position: absolute;
-    bottom: 30px;
-    left: 30px;
-    font-size: 2em;
-    letter-spacing: 0.1em;
-  }
-  html #accueil .contenu .liens-social span a {
-    color: inherit;
   }
   html #a-propos {
-    background: linear-gradient(113deg, #ffde59 0%, #a4bfeb 40%, #f7b1ab 84%, #ffde59 100%);
-    height: 100vh;
+    height: 100%;
   }
   html #a-propos .contenu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 85%;
-    margin: 0 auto;
+    flex-direction: column;
   }
   html #a-propos .contenu .photo h1 {
-    font-family: "Erica One", cursive;
-    font-size: 3em;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0.3em;
-    position: relative;
-    top: 70%;
-    left: 40%;
+    font-size: 2.15em;
+    top: 70px;
+    left: 10px;
   }
   html #a-propos .contenu .photo img {
-    width: 100%;
+    padding-top: 25px;
+    width: 75%;
   }
   html #a-propos .contenu .description {
-    width: 60%;
-    margin-top: 20%;
-    margin-left: 20%;
-    font-weight: 400;
-    line-height: 1.75em;
-  }
-  html #projets {
-    background: linear-gradient(113deg, #f7b1ab 0%, #ffde59 45%, #a4bfeb 80%, #f7b1ab 100%);
-    height: 100vh;
+    width: 100%;
+    margin: 40px 0 50px 0;
+    font-size: 0.8em;
+    line-height: 2.5em;
   }
   html #projets .contenu {
-    width: 85%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-flow: column-reverse;
   }
   html #projets .contenu .description {
-    font-family: "Erica One", cursive;
-    font-size: 5em;
-    padding-top: 35%;
+    font-size: 3em;
+    padding-top: 20px;
     width: 100%;
-    z-index: 10;
+    text-align: center;
   }
-  html #projets .contenu .description .projet a {
-    margin: 0 20px;
-    transition: 0.5s;
+  html #projets .contenu .description .num-projet a {
+    margin: 10px;
     color: inherit;
     text-decoration: none;
   }
-  html #projets .contenu .description .projet a:last-of-type {
-    margin: 0 0 0 20px;
+  html #projets .contenu .description .num-projet a:last-of-type {
+    margin: 10px;
   }
-  html #projets .contenu .description .projet a:hover {
-    color: #b1d19d;
-    font-size: 1.2em;
-    margin: 0 10px;
+  html #projets .contenu .description .num-projet a:hover {
+    color: inherit;
+    font-size: 1em;
+    margin: 10px;
   }
   html #projets .contenu img {
-    width: 60%;
-    padding: 100px 0 0 0;
-    margin-left: -50%;
-  }
-  html .projet {
-    background: #f7b1ab;
-  }
-  html .projet .contenu {
-    width: 85%;
-    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+    margin: 200px 0 0 0;
   }
   html .projet .contenu .titre {
-    font-size: 3em;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    margin-top: 100px;
-    margin-bottom: 0;
-  }
-  html .projet .contenu .titre .nom-projet {
-    font-family: "Erica One", cursive;
-    font-weight: 400;
+    font-size: 2em;
+    margin-top: 125px;
   }
   html .projet .contenu .titre .annee {
-    font-family: "Chivo", sans-serif;
-    font-weight: 300;
-    font-size: .75em;
+    font-size: .65em;
   }
   html .projet .contenu .desc-img {
-    display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-flow: column-reverse;
   }
   html .projet .contenu .desc-img .description {
-    margin-top: 100px;
-    width: 45%;
-    line-height: 2em;
-    font-size: 0.95em;
+    margin-top: 40px;
+    width: 100%;
+    font-size: 0.85em;
   }
   html .projet .contenu .desc-img .image-principale {
-    padding: 0;
-    margin-left: 50px;
-    width: 50%;
-  }
-  html .projet .contenu .desc-img .image-principale img {
+    padding-top: 40px;
+    margin-left: 0;
     width: 100%;
   }
   html .projet .contenu .desc-img .image-principale .lien {
-    background-color: #a4bfeb;
-    text-transform: uppercase;
-    position: relative;
-    left: 75%;
-    bottom: 15px;
-    padding: 15px;
+    left: 60%;
+    padding: 12px;
   }
   html .projet .contenu .desc-img .image-principale .lien a {
-    color: inherit;
-    text-decoration: none;
-    font-family: "Chivo", sans-serif;
-    font-weight: 300;
-    font-size: 1.5em;
-    transition: 0.5s;
+    font-size: 1.25em;
   }
   html .projet .contenu .desc-img .image-principale .lien a:hover {
-    letter-spacing: 0.2em;
+    letter-spacing: inherit;
   }
 }
 /*# sourceMappingURL=style.css.map */
