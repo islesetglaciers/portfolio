@@ -6,6 +6,8 @@
 html {
     font-family: $montserrat;
     color: white;
+    width: 100vw;
+    overflow-x: hidden;
 
     header {
         display: flex;
@@ -23,6 +25,7 @@ html {
             margin: 20px;
             cursor: pointer;
             transition: 0.5s;
+            z-index: 15;
 
             &:hover {
                 letter-spacing: 0.2em;
@@ -30,38 +33,57 @@ html {
         }
 
         #menu {
-            display: none;
-            width: 100%;
-            background-color: $accent_rose;
-            list-style: none;
+            display: flex;
             flex-direction: column;
             justify-content: space-around;
-            align-items: flex-end;
+            position: absolute;
+            top: 0;
+            right: 0;
             margin: 0;
-            // height: 100vh;
+            height: 100vh;
+            width: 35vw;
+            background-color: $accent_rose;
+            list-style: none;
             font-family: $chivo;
             letter-spacing: 0.2em;
             font-size: 1.5em;
+            z-index: 10;
+            transform: translateX(35vw);
+            transition: 0.5s;
     
             li {
-                padding: 0 150px 0 0;
+                padding-left: 100px;
                 a {
                     text-decoration: none;
                     color: inherit;
                     text-transform: uppercase;
+                    font-weight: 300;
                 }
     
                 .actif {
                     font-weight: 900;
                 }
+
+                .social {
+                    font-size: 1.5em;
+                    margin-right: 15px;
+                }
+
+                &:first-of-type {
+                    margin-top: 50px;
+                }
             }
+        }
+
+        #menu.ouvrir {
+            transform: translateX(0);
         }
     }
     
     #accueil {
         background: linear-gradient(113deg, rgba(164,191,235,1) 0%, rgba(247,177,171,1) 37%, rgba(255,222,89,1) 90%, rgba(164,191,235,1) 100%);
-        // width: 100vw;
         height: 100vh;
+        overflow: hidden;
 
         .contenu {
             width: 100%;
@@ -172,7 +194,7 @@ html {
                 font-size: 5em;
                 padding-top: 35%;
                 width: 100%;
-                z-index: 10;
+                z-index: 5;
 
                 .num-projet {
                     a {
@@ -292,48 +314,24 @@ html {
 // Mobiles
 @media only screen and (max-width: 600px) {
     html {
-        // header {    
-        //     .menu-nav {
-        //         position: absolute;
-        //         top: 0;
-        //         right: 0;
-        //         font-family: $chivo;
-        //         font-weight: 300;
-        //         text-transform: uppercase;
-        //         font-size: 1.5em;
-        //         border-bottom: 1px solid white;
-        //         padding: 8px 0;
-        //         margin: 20px;
-        //     }
+        header {    
+            .menu-nav {
+                font-size: 1em;
+                margin: 15px;
+                padding-top: 0;
+            }
     
-        //     #menu {
-        //         display: none;
-        //         width: 100%;
-        //         background-color: $accent_rose;
-        //         list-style: none;
-        //         flex-direction: column;
-        //         justify-content: space-around;
-        //         align-items: flex-end;
-        //         margin: 0;
-        //         // height: 100vh;
-        //         font-family: $chivo;
-        //         letter-spacing: 0.2em;
-        //         font-size: 1.5em;
-        
-        //         li {
-        //             padding: 0 150px 0 0;
-        //             a {
-        //                 text-decoration: none;
-        //                 color: inherit;
-        //                 text-transform: uppercase;
-        //             }
-        
-        //             .actif {
-        //                 font-weight: 900;
-        //             }
-        //         }
-        //     }
-        // }
+            #menu {
+                width: 100vw;
+                font-size: 1.1em;
+                transform: translateX(100vw);
+                transition: 0.5s;        
+            }
+
+            #menu.ouvrir {
+                transform: translateX(0);
+            }
+        }
     
         #accueil { 
             .contenu {    
