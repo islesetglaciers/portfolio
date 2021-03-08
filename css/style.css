@@ -481,7 +481,7 @@ html #accueil .contenu .titre {
   font-family: "Erica One", cursive;
   display: flex;
   flex-wrap: wrap;
-  font-size: 9em;
+  font-size: 8em;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.3em;
@@ -503,14 +503,14 @@ html #accueil .contenu .titre #prenom {
 }
 
 html #accueil .contenu .titre #nom {
-  top: -90px;
+  top: -78px;
 }
 
 html #accueil .contenu .description {
   text-align: right;
   width: 50%;
   margin-left: 45%;
-  font-size: 1.75em;
+  font-size: 1.5em;
 }
 
 html #accueil .contenu .liens-social {
@@ -538,7 +538,7 @@ html #a-propos {
 html #a-propos .contenu {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 85%;
   margin: 0 auto;
 }
@@ -564,11 +564,12 @@ html #a-propos .contenu .photo img {
 }
 
 html #a-propos .contenu .description {
-  width: 60%;
+  width: 65%;
   margin-top: 20%;
   margin-left: 0;
   font-weight: 400;
   line-height: 2.25em;
+  font-size: .9em;
 }
 
 html #projets {
@@ -578,15 +579,19 @@ html #projets {
 
 html #projets .contenu {
   width: 85%;
-  margin: 0 auto;
+  margin: 25px auto 0 auto;
   display: flex;
   flex-direction: row;
+}
+
+html #projets .contenu h1 {
+  display: none;
 }
 
 html #projets .contenu .description {
   font-family: "Erica One", cursive;
   font-size: 5em;
-  padding-top: 35%;
+  padding-top: 400px;
   width: 100%;
   z-index: 5;
 }
@@ -616,7 +621,7 @@ html #projets .contenu img {
 
 html .projet {
   background: #b1d19d;
-  height: 100vh;
+  height: 100%;
 }
 
 html .projet .contenu {
@@ -691,7 +696,7 @@ html .projet .contenu .desc-img .image-principale .lien a:hover {
   letter-spacing: 0.2em;
 }
 
-@media only screen and (min-width: 769px) and (max-width: 992px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   html header .menu-nav {
     font-size: 1.25em;
   }
@@ -728,18 +733,25 @@ html .projet .contenu .desc-img .image-principale .lien a:hover {
   }
   html #a-propos .contenu .photo h1 {
     font-size: 2.15em;
-    top: 70px;
+    top: 40px;
     left: -10px;
   }
   html #a-propos .contenu .photo img {
-    padding-top: 25px;
+    padding-top: 0;
     width: 75%;
   }
   html #a-propos .contenu .description {
     width: 100%;
-    margin: 250px 0 50px 0;
-    font-size: 0.9em;
-    line-height: 2.5em;
+    margin: 150px 0 20px 0;
+    font-size: 0.85em;
+    line-height: 2.25em;
+  }
+  html #projets .contenu {
+    padding-top: 50px;
+  }
+  html #projets .contenu .description {
+    padding-top: 350px;
+    font-size: 4em;
   }
   html #projets .contenu img {
     width: 75%;
@@ -802,15 +814,19 @@ html .projet .contenu .desc-img .image-principale .lien a:hover {
   }
   html #a-propos .contenu {
     flex-direction: column;
+    align-items: center;
+  }
+  html #a-propos .contenu .photo {
+    width: 100%;
   }
   html #a-propos .contenu .photo h1 {
-    font-size: 2.15em;
-    top: 70px;
-    left: 10px;
+    font-size: 2.25em;
+    top: 40px;
+    left: -5px;
   }
   html #a-propos .contenu .photo img {
-    padding-top: 25px;
     width: 60%;
+    padding-left: 0;
   }
   html #a-propos .contenu .description {
     width: 100%;

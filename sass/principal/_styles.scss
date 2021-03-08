@@ -108,7 +108,7 @@ html {
                 font-family: $erica_one;
                 display: flex;
                 flex-wrap: wrap;
-                font-size: 9em;
+                font-size: 8em;
                 font-weight: 400;
                 text-transform: uppercase;
                 letter-spacing: 0.3em;
@@ -129,7 +129,7 @@ html {
                 }
     
                 #nom {
-                    top: -90px;
+                    top: -78px;
                 }
             }
     
@@ -137,7 +137,7 @@ html {
                 text-align: right;
                 width: 50%;
                 margin-left: 45%;
-                font-size: 1.75em;
+                font-size: 1.5em;
             }
     
             .liens-social {
@@ -168,7 +168,7 @@ html {
         .contenu {
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: space-between;
             width: 85%;
             margin: 0 auto;
 
@@ -193,11 +193,12 @@ html {
             }
 
             .description {
-                width: 60%;
+                width: 65%;
                 margin-top: 20%;
                 margin-left: 0;
                 font-weight: 400;
                 line-height: 2.25em;
+                font-size: .9em;
             }
         }
     }
@@ -209,14 +210,18 @@ html {
 
         .contenu {
             width: 85%;
-            margin: 0 auto;
+            margin: 25px auto 0 auto;
             display: flex;
             flex-direction: row;
+
+            h1 {
+                display: none;
+            }
 
             .description {
                 font-family: $erica_one;
                 font-size: 5em;
-                padding-top: 35%;
+                padding-top: 400px;
                 width: 100%;
                 z-index: 5;
 
@@ -252,7 +257,7 @@ html {
     .projet {
         background: $accent_vert;
         // width: 100vw;
-        height: 100vh;
+        height: 100%;
 
         .contenu {
             width: 85%;
@@ -329,7 +334,7 @@ html {
 }
 
 // Tablettes
-@media only screen and (min-width: 769px) and (max-width: 992px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
     html {
         header {  
             .menu-nav {
@@ -383,29 +388,36 @@ html {
                 .photo {
                     h1 {
                         font-size: 2.15em;
-                        top: 70px;
+                        top: 40px;
                         left: -10px;
                     }
     
                     img {
-                        padding-top: 25px;
+                        padding-top: 0;
                         width: 75%;
                     }
                 }
     
                 .description {
                     width: 100%;
-                    margin: 250px 0 50px 0;
-                    font-size: 0.9em;
-                    line-height: 2.5em;
+                    margin: 150px 0 20px 0;
+                    font-size: 0.85em;
+                    line-height: 2.25em;
                 }
             }
         }
 
         #projets {    
-            .contenu {                        
+            .contenu { 
+                padding-top: 50px;  
+                
+                .description {
+                    padding-top: 350px;
+                    font-size: 4em;
+                }
                 img {
                     width: 75%;
+                    // padding-top: 0;
                 }
             }
             
@@ -496,17 +508,21 @@ html {
 
             .contenu {
                 flex-direction: column;
+                align-items: center;
     
                 .photo {
+                    width: 100%;
+
                     h1 {
-                        font-size: 2.15em;
-                        top: 70px;
-                        left: 10px;
+                        font-size: 2.25em;
+                        top: 40px;
+                        left: -5px;
                     }
     
                     img {
-                        padding-top: 25px;
+                        // padding-top: 25px;
                         width: 60%;
+                        padding-left: 0;
                     }
                 }
     
