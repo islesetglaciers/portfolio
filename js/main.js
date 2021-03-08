@@ -10,4 +10,6 @@ btnMenu.addEventListener("click", () => {
         btnMenu.innerHTML = "M e n u";
     }
     menuNav.classList.toggle("ouvrir");
-})
+});
+
+// Changer Image dans la page Projets

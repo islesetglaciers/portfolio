@@ -187,16 +187,17 @@ html {
                 }
 
                 img {
-                    width: 100%;
+                    width: 75%;
+                    padding-left: 30px;
                 }
             }
 
             .description {
                 width: 60%;
                 margin-top: 20%;
-                margin-left: 20%;
+                margin-left: 0;
                 font-weight: 400;
-                line-height: 1.75em;
+                line-height: 2.25em;
             }
         }
     }
@@ -300,6 +301,7 @@ html {
                     .lien {
                         background-color: $accent_bleu;
                         text-transform: uppercase;
+                        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
                         position: relative;
                         left: 75%;
                         bottom: 15px;
@@ -503,7 +505,7 @@ html {
     
                     img {
                         padding-top: 25px;
-                        width: 75%;
+                        width: 60%;
                     }
                 }
     
