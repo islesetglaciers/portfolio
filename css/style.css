@@ -379,7 +379,7 @@ html {
   font-family: "Montserrat", sans-serif;
   color: white;
   width: 100vw;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 html header {
@@ -423,6 +423,7 @@ html header #menu {
   font-size: 1.5em;
   z-index: 10;
   transform: translateX(35vw);
+  visibility: hidden;
   transition: 0.5s;
 }
 
@@ -466,6 +467,7 @@ html header #menu li:first-of-type {
 
 html header #menu.ouvrir {
   transform: translateX(0);
+  visibility: visible;
 }
 
 html #accueil {
@@ -697,6 +699,9 @@ html .projet .contenu .desc-img .image-principale .lien a:hover {
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+  html {
+    overflow-x: hidden !important;
+  }
   html header .menu-nav {
     font-size: 1.25em;
   }
@@ -774,6 +779,9 @@ html .projet .contenu .desc-img .image-principale .lien a:hover {
 }
 
 @media only screen and (min-width: 601px) and (max-width: 768px) {
+  html {
+    overflow-x: hidden !important;
+  }
   html header .menu-nav {
     font-size: 1.25em;
     margin: 15px;
@@ -897,6 +905,9 @@ html .projet .contenu .desc-img .image-principale .lien a:hover {
 }
 
 @media only screen and (max-width: 600px) {
+  html {
+    overflow-x: hidden !important;
+  }
   html header .menu-nav {
     font-size: 1em;
     margin: 15px;
@@ -910,6 +921,7 @@ html .projet .contenu .desc-img .image-principale .lien a:hover {
   }
   html header #menu.ouvrir {
     transform: translateX(0);
+    visibility: visible;
   }
   html #accueil .contenu .titre {
     font-size: 4em;
@@ -975,6 +987,9 @@ html .projet .contenu .desc-img .image-principale .lien a:hover {
     width: 100%;
     padding: 0;
     margin: 200px 0 0 0;
+  }
+  html .projet {
+    height: 100%;
   }
   html .projet .contenu .titre {
     font-size: 2em;
