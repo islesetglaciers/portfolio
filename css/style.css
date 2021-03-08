@@ -395,7 +395,7 @@ html header .menu-nav {
   text-transform: uppercase;
   font-size: 1.5em;
   border-bottom: 1px solid white;
-  padding: 8px 0;
+  padding-bottom: 8px;
   margin: 20px;
   cursor: pointer;
   transition: 0.5s;
@@ -435,15 +435,29 @@ html header #menu li a {
   color: inherit;
   text-transform: uppercase;
   font-weight: 300;
+  transition: 0.5s;
+}
+
+html header #menu li a:hover {
+  color: #ffde59;
 }
 
 html header #menu li .actif {
   font-weight: 900;
+  color: #ffde59;
 }
 
 html header #menu li .social {
   font-size: 1.5em;
   margin-right: 15px;
+}
+
+html header #menu li .social:hover:first-of-type {
+  color: #a4bfeb;
+}
+
+html header #menu li .social:hover:nth-of-type(2) {
+  color: #b1d19d;
 }
 
 html header #menu li:first-of-type {
@@ -457,7 +471,6 @@ html header #menu.ouvrir {
 html #accueil {
   background: linear-gradient(113deg, #a4bfeb 0%, #f7b1ab 37%, #ffde59 90%, #a4bfeb 100%);
   height: 100vh;
-  overflow: hidden;
 }
 
 html #accueil .contenu {
@@ -510,6 +523,11 @@ html #accueil .contenu .liens-social {
 
 html #accueil .contenu .liens-social span a {
   color: inherit;
+  transition: 0.5s;
+}
+
+html #accueil .contenu .liens-social span a:hover {
+  color: #b1d19d;
 }
 
 html #a-propos {
@@ -525,15 +543,19 @@ html #a-propos .contenu {
   margin: 0 auto;
 }
 
+html #a-propos .contenu .photo {
+  margin-top: 10%;
+}
+
 html #a-propos .contenu .photo h1 {
   font-family: "Erica One", cursive;
-  font-size: 3em;
+  font-size: 2.65em;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.3em;
   position: relative;
-  top: 70%;
-  left: 40%;
+  top: 50px;
+  left: 10px;
 }
 
 html #a-propos .contenu .photo img {
@@ -582,7 +604,7 @@ html #projets .contenu .description .num-projet a:last-of-type {
 html #projets .contenu .description .num-projet a:hover {
   color: #b1d19d;
   font-size: 1.2em;
-  margin: 0 10px;
+  margin: 0;
 }
 
 html #projets .contenu img {
@@ -592,7 +614,7 @@ html #projets .contenu img {
 }
 
 html .projet {
-  background: #f7b1ab;
+  background: #b1d19d;
 }
 
 html .projet .contenu {
@@ -626,19 +648,21 @@ html .projet .contenu .desc-img {
 
 html .projet .contenu .desc-img .description {
   margin-top: 100px;
+  margin-bottom: 40px;
   width: 45%;
   line-height: 2em;
   font-size: 0.95em;
 }
 
 html .projet .contenu .desc-img .image-principale {
-  padding: 0;
+  padding-top: 0;
   margin-left: 50px;
   width: 50%;
 }
 
 html .projet .contenu .desc-img .image-principale img {
   margin-top: 50px;
+  padding-top: 0;
   width: 100%;
 }
 
@@ -664,6 +688,195 @@ html .projet .contenu .desc-img .image-principale .lien a:hover {
   letter-spacing: 0.2em;
 }
 
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  html header .menu-nav {
+    font-size: 1.25em;
+  }
+  html header #menu {
+    width: 50vw;
+    font-size: 1.3em;
+    padding: 0;
+    transform: translateX(50vw);
+    transition: 0.5s;
+  }
+  html header #menu li .social {
+    font-size: 2em;
+  }
+  html header #menu.ouvrir {
+    transform: translateX(0);
+  }
+  html #accueil .contenu .titre {
+    font-size: 6em;
+    padding-top: 50px;
+  }
+  html #accueil .contenu .titre #nom {
+    top: -58px;
+  }
+  html #accueil .contenu .description {
+    width: 60%;
+    margin-left: 35%;
+    font-size: 1.5em;
+  }
+  html #a-propos {
+    height: 100vh;
+  }
+  html #a-propos .contenu {
+    flex-direction: row;
+  }
+  html #a-propos .contenu .photo h1 {
+    font-size: 2.15em;
+    top: 70px;
+    left: -10px;
+  }
+  html #a-propos .contenu .photo img {
+    padding-top: 25px;
+    width: 75%;
+  }
+  html #a-propos .contenu .description {
+    width: 100%;
+    margin: 250px 0 50px 0;
+    font-size: 0.9em;
+    line-height: 2.5em;
+  }
+  html #projets .contenu img {
+    width: 75%;
+  }
+  html .projet .contenu .titre {
+    font-size: 2.5em;
+  }
+  html .projet .contenu .desc-img .description {
+    margin-top: 50px;
+    font-size: 0.85em;
+  }
+  html .projet .contenu .desc-img .image-principale {
+    padding-top: 0;
+    margin-left: 50px;
+    width: 50%;
+  }
+  html .projet .contenu .desc-img .image-principale .lien {
+    left: 60%;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  html header .menu-nav {
+    font-size: 1.25em;
+    margin: 15px;
+    padding-top: 0;
+  }
+  html header #menu {
+    width: 100vw;
+    font-size: 1.1em;
+    text-align: center;
+    padding: 0;
+    transform: translateX(100vw);
+    transition: 0.5s;
+  }
+  html header #menu li {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  html header #menu li .social {
+    font-size: 2em;
+  }
+  html header #menu.ouvrir {
+    transform: translateX(0);
+  }
+  html #accueil .contenu .titre {
+    font-size: 5em;
+    padding-top: 50px;
+  }
+  html #accueil .contenu .titre #nom {
+    top: -50px;
+  }
+  html #accueil .contenu .description {
+    width: 60%;
+    margin-left: 35%;
+    font-size: 1.4em;
+  }
+  html #a-propos {
+    height: 100%;
+  }
+  html #a-propos .contenu {
+    flex-direction: column;
+  }
+  html #a-propos .contenu .photo h1 {
+    font-size: 2.15em;
+    top: 70px;
+    left: 10px;
+  }
+  html #a-propos .contenu .photo img {
+    padding-top: 25px;
+    width: 75%;
+  }
+  html #a-propos .contenu .description {
+    width: 100%;
+    margin: 40px 0 50px 0;
+    font-size: 0.8em;
+    line-height: 2.5em;
+  }
+  html #projets .contenu {
+    flex-direction: column;
+    flex-flow: column-reverse;
+  }
+  html #projets .contenu .description {
+    font-size: 3em;
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  html #projets .contenu .description .num-projet a {
+    margin: 10px;
+    color: inherit;
+    text-decoration: none;
+  }
+  html #projets .contenu .description .num-projet a:last-of-type {
+    margin: 10px;
+  }
+  html #projets .contenu .description .num-projet a:hover {
+    color: inherit;
+    font-size: 1em;
+    margin: 10px;
+  }
+  html #projets .contenu img {
+    width: 100%;
+    padding: 0;
+    margin: 15% 0 0 0;
+  }
+  html .projet .contenu .titre {
+    font-size: 2em;
+    margin-top: 125px;
+  }
+  html .projet .contenu .titre .annee {
+    font-size: .65em;
+  }
+  html .projet .contenu .desc-img {
+    flex-direction: column;
+    flex-flow: column-reverse;
+  }
+  html .projet .contenu .desc-img .description {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+    font-size: 0.85em;
+  }
+  html .projet .contenu .desc-img .image-principale {
+    padding-top: 20px;
+    margin-left: 0;
+    width: 100%;
+  }
+  html .projet .contenu .desc-img .image-principale .lien {
+    left: 75%;
+    padding: 12px;
+  }
+  html .projet .contenu .desc-img .image-principale .lien a {
+    font-size: 1.25em;
+  }
+  html .projet .contenu .desc-img .image-principale .lien a:hover {
+    letter-spacing: inherit;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   html header .menu-nav {
     font-size: 1em;
@@ -680,15 +893,15 @@ html .projet .contenu .desc-img .image-principale .lien a:hover {
     transform: translateX(0);
   }
   html #accueil .contenu .titre {
-    font-size: 4.5em;
+    font-size: 4em;
     padding-top: 50px;
   }
   html #accueil .contenu .titre #nom {
-    top: -45px;
+    top: -38px;
   }
   html #accueil .contenu .description {
-    width: 60%;
-    margin-left: 35%;
+    width: 75%;
+    margin-left: 15%;
     font-size: 1.3em;
   }
   html #accueil .contenu .liens-social {
