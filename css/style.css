@@ -665,6 +665,7 @@ html .projet .contenu .desc-img .description {
 
 html .projet .contenu .desc-img .image-principale {
   padding-top: 0;
+  padding-bottom: 100px;
   margin-left: 50px;
   width: 50%;
 }
