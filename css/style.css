@@ -375,6 +375,19 @@ template {
   color: #ffde59;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #b1d19d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f7b1ab;
+  border-radius: 10px;
+}
+
 html {
   font-family: "Montserrat", sans-serif;
   color: white;

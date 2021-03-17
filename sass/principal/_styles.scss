@@ -3,6 +3,19 @@
     color: $accent_jaune;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: $accent_vert;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $accent_rose; 
+    border-radius: 10px;
+}
+
 html {
     font-family: $montserrat;
     color: white;
