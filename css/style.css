@@ -391,7 +391,7 @@ html header .menu-nav {
   top: 0;
   right: 0;
   font-family: "Chivo", sans-serif;
-  font-weight: 300;
+  font-weight: 900;
   text-transform: uppercase;
   font-size: 1.5em;
   border-bottom: 1px solid white;
@@ -446,6 +446,14 @@ html header #menu li a:hover {
 html header #menu li .actif {
   font-weight: 900;
   color: #ffde59;
+}
+
+html header #menu li .liens-projets {
+  padding-top: 10px;
+}
+
+html header #menu li .liens-projets .lien-projet {
+  margin: 10px;
 }
 
 html header #menu li .social {
