@@ -12,4 +12,16 @@ btnMenu.addEventListener("click", () => {
     menuNav.classList.toggle("ouvrir");
 });
 
+
+
 // Changer Image dans la page Projets
+const imgProjet = document.querySelector('.contenu img');
+const imagesProjets = ['img/projets/refonte-tim/cover.jpg', 'img/projets/momo/cover.jpg', 'img/projets/daneo/cover.jpg', 'img/projets/quiz-astro/cover.jpg', 'img/projets/quiz-anime/cover.jpg', 'img/projets/projet-recherche/cover.jpg'];
+
+// Fonction changerImage
+function changerImage(numImg) {
+    // console.log(evt);
+    // console.log("Numéro de l'image : " + numImg);
+    imgProjet.src = imagesProjets[numImg];
+} 
+
