@@ -613,22 +613,26 @@ html #projets .contenu h1 {
 
 html #projets .contenu .description {
   font-family: "Erica One", cursive;
-  font-size: 5em;
-  padding-top: 400px;
+  font-size: 6em;
+  padding-top: 70vh;
   width: 100%;
   z-index: 5;
+  height: 5vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+html #projets .contenu .description .num-projet {
+  display: inline-block;
 }
 
 html #projets .contenu .description .num-projet a {
-  margin: 0 20px;
+  margin: 0 15px;
   transition: 0.5s;
   color: inherit;
   text-decoration: none;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
-}
-
-html #projets .contenu .description .num-projet a:last-of-type {
-  margin: 0 0 0 20px;
 }
 
 html #projets .contenu .description .num-projet a:hover {
