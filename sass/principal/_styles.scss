@@ -243,10 +243,9 @@ html {
             .description {
                 font-family: $erica_one;
                 font-size: 6em;
-                padding-top: 70vh;
+                padding-top: 60vh;
                 width: 100%;
                 z-index: 5;
-                height: 5vh;
                 display: flex;
                 flex-direction: row;
                 align-items: flex-end;
@@ -272,7 +271,7 @@ html {
             img {
                 width: 60%;
                 padding: 100px 0 0 0;
-                margin-left: -50%;
+                margin-left: -40vw;
             }
         }
         
@@ -466,15 +465,17 @@ html {
 
         #projets {  
             .contenu { 
-                padding-top: 50px;  
+                padding-top: 5vh;  
                 
                 .description {
-                    padding-top: 350px;
                     font-size: 4em;
+                    flex-wrap: wrap;
+                    align-items: flex-end;
+                    padding-top: 65vh;
+                    height: 10vh;
                 }
                 img {
-                    width: 75%;
-                    // padding-top: 0;
+                    padding-top: 15%;
                 }
             }
             
@@ -603,6 +604,8 @@ html {
                     padding-top: 20px;
                     width: 100%;
                     text-align: center;
+                    flex-wrap: wrap;
+                    justify-content: center;
     
                     .num-projet {
                         a {
@@ -625,8 +628,8 @@ html {
         
                 img {
                     width: 100%;
-                    padding: 0;
-                    margin: 15% 0 0 0;
+                    padding-top: 10vh;
+                    margin: 0 auto;
                 }
             }
             
@@ -765,6 +768,8 @@ html {
                     padding-top: 20px;
                     width: 100%;
                     text-align: center;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
     
                     .num-projet {
                         a {
@@ -787,8 +792,8 @@ html {
         
                 img {
                     width: 100%;
-                    padding: 0;
-                    margin: 200px 0 0 0;
+                    padding-top: 10vh;
+                    margin: 0 auto;
                 }
             }
             
