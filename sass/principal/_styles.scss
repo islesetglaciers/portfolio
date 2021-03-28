@@ -314,6 +314,24 @@ html {
                     width: 45%;
                     line-height: 2.25em;
                     font-size: 1em;
+
+                    .specs-techniques {
+                        list-style: none;
+                        // width: 75%;
+                        margin-top: 3vh;
+                        // border: 2px solid $accent_jaune;
+                        // padding: 10px;
+
+                        li {
+                            margin-top: 1vh;
+
+                            span {
+                                font-weight: 700;
+                                border-bottom: 2px solid $accent_jaune;
+                                padding-bottom: 5px;
+                            }
+                        }
+                    }
                 }
 
                 .image-principale {
@@ -350,6 +368,18 @@ html {
                             }
                         }
                     }
+                }
+
+            }
+
+            .gallerie {
+                width: 75%;
+                margin: 0 auto;
+                
+                video {
+                    margin: 0 auto;
+                    width: 100%;
+                    margin-bottom: 5vh;
                 }
             }
             

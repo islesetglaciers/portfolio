@@ -685,6 +685,21 @@ html .projet .contenu .desc-img .description {
   font-size: 1em;
 }
 
+html .projet .contenu .desc-img .description .specs-techniques {
+  list-style: none;
+  margin-top: 3vh;
+}
+
+html .projet .contenu .desc-img .description .specs-techniques li {
+  margin-top: 1vh;
+}
+
+html .projet .contenu .desc-img .description .specs-techniques li span {
+  font-weight: 700;
+  border-bottom: 2px solid #ffde59;
+  padding-bottom: 5px;
+}
+
 html .projet .contenu .desc-img .image-principale {
   padding-top: 0;
   padding-bottom: 100px;
@@ -719,6 +734,17 @@ html .projet .contenu .desc-img .image-principale .lien a {
 
 html .projet .contenu .desc-img .image-principale .lien a:hover {
   letter-spacing: 0.2em;
+}
+
+html .projet .contenu .gallerie {
+  width: 75%;
+  margin: 0 auto;
+}
+
+html .projet .contenu .gallerie video {
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 5vh;
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {

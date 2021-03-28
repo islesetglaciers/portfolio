@@ -16,7 +16,7 @@ btnMenu.addEventListener("click", () => {
 
 // Changer Image dans la page Projets
 const imgProjet = document.querySelector('.contenu img');
-const imagesProjets = ['img/projets/refonte-tim/cover.jpg', 'img/projets/momo/cover.jpg', 'img/projets/daneo/cover.jpg', 'img/projets/quiz-astro/cover.jpg', 'img/projets/quiz-anime/cover.jpg', 'img/projets/projet-recherche/cover.jpg'];
+const imagesProjets = ['img/projets/refonte-tim/cover.jpg', 'img/projets/momo/cover.jpg', 'img/projets/daneo/cover.jpg', 'img/projets/quiz-astro/cover.jpg', 'img/projets/quiz-anime/cover.jpg', 'img/projets/projet-recherche/cover.png'];
 
 // Fonction changerImage
 function changerImage(numImg) {
