@@ -602,7 +602,7 @@ html #projets {
 
 html #projets .contenu {
   width: 85%;
-  margin: 25px auto 0 auto;
+  margin: 25px auto 0;
   display: flex;
   flex-direction: row;
 }
@@ -614,12 +614,12 @@ html #projets .contenu h1 {
 html #projets .contenu .description {
   font-family: "Erica One", cursive;
   font-size: 5.5em;
-  padding-top: 55vh;
+  padding-top: 50vh;
   width: 100%;
   z-index: 5;
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
 }
 
 html #projets .contenu .description .num-projet {
@@ -642,8 +642,8 @@ html #projets .contenu .description .num-projet a:hover {
 
 html #projets .contenu img {
   width: 60%;
-  padding: 100px 0 0 0;
-  margin-left: -40vw;
+  padding: 10vh 0 0;
+  margin-left: -50vw;
 }
 
 html .projet {
@@ -805,16 +805,21 @@ html .projet .contenu .gallerie video {
   }
   html #projets .contenu {
     padding-top: 5vh;
+    flex-direction: column;
+    flex-flow: column-reverse;
   }
   html #projets .contenu .description {
     font-size: 4em;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    padding-top: 65vh;
-    height: 10vh;
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
   html #projets .contenu img {
-    padding-top: 15%;
+    width: 65%;
+    padding-top: 5vh;
+    margin: 0 auto;
   }
   html .projet .contenu .titre {
     font-size: 2.5em;

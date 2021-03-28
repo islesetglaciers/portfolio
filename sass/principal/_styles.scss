@@ -232,7 +232,7 @@ html {
 
         .contenu {
             width: 85%;
-            margin: 25px auto 0 auto;
+            margin: 25px auto 0;
             display: flex;
             flex-direction: row;
 
@@ -243,12 +243,12 @@ html {
             .description {
                 font-family: $erica_one;
                 font-size: 5.5em;
-                padding-top: 55vh;
+                padding-top: 50vh;
                 width: 100%;
                 z-index: 5;
                 display: flex;
                 flex-direction: row;
-                align-items: flex-end;
+                align-items: center;
 
                 .num-projet {
                     display: inline-block;
@@ -267,11 +267,11 @@ html {
                     }
                 }
             }
-                
+
             img {
                 width: 60%;
-                padding: 100px 0 0 0;
-                margin-left: -40vw;
+                padding: 10vh 0 0;
+                margin-left: -50vw;
             }
         }
         
@@ -466,16 +466,23 @@ html {
         #projets {  
             .contenu { 
                 padding-top: 5vh;  
+                flex-direction: column;
+                flex-flow: column-reverse;
                 
-                .description {
+                .description {  
                     font-size: 4em;
-                    flex-wrap: wrap;
-                    align-items: flex-end;
-                    padding-top: 65vh;
-                    height: 10vh;
+                    padding-top: 20px;
+                    width: 100%;
+                    text-align: center;
+                    // flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
                 }
+        
                 img {
-                    padding-top: 15%;
+                    width: 65%;
+                    padding-top: 5vh;
+                    margin: 0 auto;
                 }
             }
             
